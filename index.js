@@ -1,4 +1,35 @@
 var randomNumber1 = Math.floor((Math.random()) * 6 + 1);
+var randomImage1 = "./images/dice" + randomNumber1 + ".png";
+document.querySelectorAll("img")[0].setAttribute("src", randomImage1);
+
+var randomNumber2 = Math.floor((Math.random()) * 6 + 1);
+var randomImage2 = "./images/dice" + randomNumber2 + ".png";
+document.querySelectorAll("img")[1].setAttribute("src", randomImage2);
+
+
+if (randomNumber1 > randomNumber2) {
+    document.querySelector("h1").textContent = "Player 1 wins!";
+}
+else if (randomNumber1 < randomNumber2) {
+    document.querySelector("h1").textContent = "Player 2 wins!";
+}
+else if (randomNumber1 === randomNumber2) {
+    document.querySelector("h1").textContent = "SameSame!";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 if (randomNumber1 == 1) {
     document.querySelectorAll("img")[0].setAttribute("src","./images/dice1.png");
 }
@@ -17,10 +48,12 @@ else if (randomNumber1 == 5) {
 else if (randomNumber1 == 6) {
     document.querySelectorAll("img")[0].setAttribute("src", "./images/dice6.png");
 }
+*/
 
-var randomNumber2 = Math.floor((Math.random()) * 6 + 1);
+
+/*
 if (randomNumber2 == 1) {
-    document.querySelectorAll("img")[1].setAttribute("src","./images/dice1.png");
+    ("src","./images/dice1.png");
 }
 else if (randomNumber2 == 2) {
     document.querySelectorAll("img")[1].setAttribute("src", "./images/dice2.png");
@@ -37,3 +70,4 @@ else if (randomNumber2 == 5) {
 else if (randomNumber2 == 6) {
     document.querySelectorAll("img")[1].setAttribute("src", "./images/dice6.png");
 }
+*/
